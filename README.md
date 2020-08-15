@@ -1,8 +1,8 @@
-# Aprendiendo VIM
+# :student: Aprendiendo VIM
 
 Notas tomadas a partir de vimtutor.
 
-## Modos de VIM
+## :thinking: Modos de VIM
 
 Vim tiene tres modos:
 
@@ -17,7 +17,7 @@ El modo de inserción es en el que añadiremos texto al documento.
 
 El modo visual nos permite seleccionar texto para hacer operaciones con él. 
 
-## Moviéndonos por el documento
+## :arrow_left: :arrow_up: :arrow_down: :arrow_right: Moviéndonos por el documento
 
 Para movernos a través del documento utilizaremos las teclas H (<), J (v), K (^) y L (>)
 
@@ -48,9 +48,9 @@ Por ejemplo:
 7e: Nos lleva al final de la 7ª palabra siguiente desde donde estamos.
 ```
 
-## Borrando cosas
+## :x: Borrando cosas
 
-Podemos borrar las siguientes instrucciones para borrar cosas:
+Podemos utilizar las siguientes instrucciones para borrar cosas:
 
 - `x`: Borra el carácter sobre el que tenemos el cursor.
 - `d`: Borra la entidad que especifiquemos. Por ejemplo, para borrar una palabra sería `dw`.
@@ -65,13 +65,13 @@ d2w: Nos borra las dos siguientes palabras.
 d$: Nos borra desde el cursor hasta el final de la línea
 ```
 
-## Deshacer y rehacer.
+## :arrow_right_hook: Deshacer y rehacer.
 
 Para deshacer la última acción podemos usar `u`.
 
 Para rehacer, pulsaremos CTRL + R
 
-## Copiar, cortar y pegar
+## :clipboard: :scissors: Copiar, cortar y pegar
 
 Para cortar texto, tenemos que borrar en primer lugar el texto que deseemos cortar, 
 desplazarnos a donde lo queremos insertar y usar el comando `p` (PUT).
@@ -95,14 +95,14 @@ p: Pegamos las 3 palabras que hemos copiado.
 ```
 
 
-## Reemplazar texto
+## :abc: Editar texto
 
 Para reemplazar texto tenemos varios comandos:
 
 - `r`: (Replace) Nos reemplaza el carácter en el que nos encontramos por otro.
 - `c<entidad>`: (Change) Nos borra la entidad que deseemos cambiar y nos pone en modo de inserción.
    
-## Alternativas para entrar en modo de inserción
+## :pencil: Alternativas para entrar en modo de inserción
 
 - `SHIFT + I`: Nos lleva al primer carácter que no esté en blanco (ignora espacios) y entramos.
 - `a`: Nos abre el modo de inserción en el siguiente carácter a nuestro cursor.
@@ -114,12 +114,12 @@ Para reemplazar texto tenemos varios comandos:
 - `c<modificador>`: Nos borra lo que le especifiquemos y abre modo inserción.
 - `C`: Borra desde el cursor hasta el final de la línea.
 
-## Moviéndonos a través de simbolos de apertura y cierre
+## :rowboat: Moviéndonos a través de simbolos de apertura y cierre
 
 Para movernos fácilmente los símbolos de apertura y cierre, como `()`, `[]`, `{}`, 
 podemos utilizar el comando `%`, que nos lleva desde la apertura al cierre, y viceversa.
 
-## Búsqueda en el documento
+## :question: Búsqueda en el documento
 
 Para buscar en el documento podemos utilizar `/<texto` (si queremos buscar hacia 
 adelante) o `?<texto>` si lo queremos hacer hacia atrás.
@@ -130,7 +130,7 @@ Para volver al punto en el que estábamos antes de hacer la búqueda podemos usa
 
 Si quisiéramos volver de nuevo a la búsqueda, tendremos que usar `CTRL + i`
 
-## Reemplazando texto
+## :scroll: Reemplazando texto
 
 Para reemplazar texto usaremos el siguiente comando:
 
@@ -159,7 +159,7 @@ si realmente queremos reemplazar o no el texto:
 :%s/textoviejo/textonuevo/gc
 ```
 
-## Ejecutando comandos desde VIM
+## :wrench: Ejecutando comandos desde VIM
 
 Para ejecutar un comando del sistema desde VIM podemos hacerlo escribiendo `:!<nombre del comando>`.
 
